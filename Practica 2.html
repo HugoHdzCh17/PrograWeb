@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Sistema Solar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        table {
+            width: 75%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+
+        iframe {
+            width: 56%;
+            height: 856px;
+            margin: 20px auto;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="color: darkmagenta;">El Sistema Solar</h1>
+    </header>
+
+    <table>
+        <tr>
+            <td>
+                <img src="https://media.gq.com.mx/photos/623f7ab8eaa378c48316e6db/1:1/w_1704,h_1704,c_limit/mercurio.jpg" 
+                onclick="mostrarImagen('https://cdn.pixabay.com/photo/2011/12/13/14/31/earth-11015_1280.jpg')" 
+                style="width:150px;" alt="Mercurio" /> 
+            </td>
+            <td>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Venus_globe.jpg/1024px-Venus_globe.jpg" 
+                onclick="mostrarImagen('https://cdn.pixabay.com/photo/2011/12/13/14/31/earth-11015_1280.jpg')" 
+                style="width:260px;" alt="Venus" /> 
+            </td>
+             <td>
+                <img src="https://img.freepik.com/foto-gratis/representacion-3d-planeta-tierra_23-2150498436.jpg" 
+                onclick="mostrarImagen('https://cdn.pixabay.com/photo/2011/12/13/14/31/earth-11015_1280.jpg')" 
+                style="width:500px;" alt="Tierra" /> 
+            </td>
+            <td>
+                <img src="https://www.nationalgeographic.com.es/medio/2023/03/17/ilustracion-en-3d-de-marte_c8bf5a53_1300652810_230317104534_800x800.jpg" 
+                onclick="mostrarImagen('https://cdn.pixabay.com/photo/2011/12/13/14/31/earth-11015_1280.jpg')" 
+                style="width:390px;" alt="Marte" /> 
+            </td>
+            <!-- Agrega más imágenes según sea necesario -->
+        </tr>
+    </table>
+
+    <iframe id="imagenFrame" frameborder="0"></iframe>
+
+    <script>
+        function mostrarImagen(src) {
+            var iframe = document.getElementById('imagenFrame');
+            iframe.style.display = 'block';
+            iframe.contentDocument.body.innerHTML = '<img src="' + src + '" style="width:100%; height:auto;" />';
+        }
+    </script>
+
+</body>
+</html>
