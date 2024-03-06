@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+   <!--Define el conjunto de caracteres-->
+    <meta charset="utf-8"/>
+    <meta name="autor" content="UPSLP">
+    <link rel="icon" type="image/png" href="imagenes/patriots.png"> <!--Esto agrega una imagen al encabezado-->
+</head>
+<body>
+    <header>
+        <h1 align="center">Venta en Linea</h1>
+    </header>
+
+    <form method="post" action="" enctype="text/plain"> 
+    <fieldset>
+        <legend> <h3>Informacion general</h3> </legend>
+        <table align="center">
+        <tr>
+        <td>
+        <legend for="usuario">Nombre:</legend>
+        <input type="text" name="usuario" maxlength="25" placeholder="Nombre" title="Nombre de Usuario" required>
+        </td>
+                    
+    <td>
+        <legend for="ApellP">Apellido Paterno:</legend>
+        <input type="text" name="ApellP" maxlength="25" placeholder="Apellido Paterno" title="Apellido Paterno" id="ApellP" required>
+    </td>
+
+        <td>
+            <legend for="ApellM">Apellido Materno:</legend>
+            <input type="text" name="ApellM" maxlength="25" placeholder="Apellido Materno" title="Apellido Materno" id="ApellM" required>
+        </td>
+        </tr>
+        <tr>
+        <td>
+         <legend for="NomUs">Nombre de Usuario:</legend>
+            <input type="text" name="NomUs" maxlength="25" placeholder="Usuario" title="Nombre del usuario" id="NomUs" required>
+        </td>
+
+        <td>
+            <legend for="Contra">Contraseña:</legend>
+            <input type="text" name="Contra" maxlength="25" placeholder="Pasword" title="Pasword" id="Contra" required>
+        </td>
+
+        <td>
+            <legend for="Fechan">Fecha de nacimiento</legend>
+            <input type="date" name="Fechan" id="Fechan">
+        </td>
+        </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+        <legend> <h3>Datos de facturación</h3> </legend>
+        <table align="center">
+            <tr>
+            <td>
+            <legend for="pais">País:</legend>
+            <select name="pais" id="Pais" size="3">
+                    <option value="mexico">México</option>
+                    <option value="E.U.A.">E.U.A,</option>
+                    <option value="canada">Canada</option>
+                    <option value="Rusia">Rusia</option>
+                    <option value="espana">España</option>
+                   <option value="argentina">Argentina</option>
+          </select>
+            </td>
+
+            <td>
+            <legend for="ciudad">País:</legend>
+            <select name="Ciudad" id="Ciudad" size="3">
+                    <option value="S.L.P.">S.L.P.</option>
+                    <option value="Cd. Juarez">Cd. Juarez</option>
+                    <option value="Moscu">Moscu</option>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Madrid">Madrid</option>
+                   <option value="New York">New York</option>
+          </select>
+            </td>
+
+            <td>
+                <legend for="Calle">Calle:</legend>
+                <input type="text" name="Calle" maxlength="25" placeholder="Calle" title="Calle" id="Calle" required>
+        </td>
+        </tr>
+        <tr>
+        <td>
+                <legend for="Numero Exterior">Numero de Casa:</legend>
+                <input type="text" name="Numero Exterior" maxlength="25" placeholder="Numero Exterior" title="Numero Exterior" id="Numero Exterior"required>
+            </td>
+
+            <td>
+                <legend for="Colonia">Colonia:</legend>
+                <input type="text" name="Colonia" maxlength="25" placeholder="Colonia" title="Colonia" id="Colonia" required>
+            </td>
+
+            <td>
+                <legend for="E-Mail">E-Mail:</legend>
+                <input type="text" name="E-Mail" maxlength="25" placeholder="E-Mail" title="E-Mail" id="E-Mail" required>
+            </td>
+
+        </td>
+        </tr>
+        <tr>
+        <td>
+                <legend for="RFC"> RFC:</legend>
+                <input type="text" name="RFC" maxlength="25" placeholder="RFC" title="RFC" id="RFC" required>
+            </td>
+
+            <td>
+                <legend for="C.P.">C.P.:</legend>
+                <input type="text" name="C.P." maxlength="25" placeholder="C.P." title="Codigo Postal" id="C.P." required>
+            </td>
+
+        <td>
+            <button type="submit">Enviar</button>
+        </td>
+        <td>
+            <button type="reset">Reiniciar</button>
+        </td>
+        </tr>
+
+        </table>
+        </fieldset>
+    </form>
+</body>
+</html>
